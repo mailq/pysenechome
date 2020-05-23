@@ -1,9 +1,6 @@
 pysenec library
 ===============
 
-[![image](https://circleci.com/gh/kellerza/pysma.svg?style=svg)](https://circleci.com/gh/kellerza/pysma)
-[![Codecov](https://codecov.io/gh/kellerza/pysma/branch/master/graph/badge.svg)](https://codecov.io/gh/kellerza/pysma)
-
 SENEC Webconnect library for Python 3. The library was originally created
 to integrate a SENEC.Home Hybrid battery with HomeAssistant
 
