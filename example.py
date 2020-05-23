@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Basic usage example and testing of pysenec."""
+"""Basic usage example and testing of pysenechome."""
 import argparse
 import asyncio
 import logging
@@ -8,7 +8,7 @@ import sys
 
 import aiohttp
 
-import pysenec
+import pysenechome
 
 # This module will work with Python 3.5+
 # Python 3.4+ "@asyncio.coroutine" decorator
@@ -29,7 +29,7 @@ def print_table(sensors):
 async def main_loop(loop, ip):  # pylint: disable=invalid-name
     """Main loop."""
     async with aiohttp.ClientSession(loop=loop) as session:
-        VAR["senec"] = pysenec.SENEC(session, ip)
+        VAR["senec"] = pysenechome.SENEC(session, ip)
         VAR["running"] = True
         cnt = 5
         while VAR.get("running"):

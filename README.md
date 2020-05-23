@@ -1,5 +1,5 @@
-pysenec library
-===============
+pysenechome library
+===================
 
 SENEC Webconnect library for Python 3. The library was originally created
 to integrate a SENEC.Home Hybrid battery with HomeAssistant

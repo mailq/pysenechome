@@ -5,7 +5,7 @@ This module was created by reverse engineering the web interface.
 The source code is heavily based (copied and adapted) from
 https://github.com/kellerza/pysma
 
-Source: http://www.github.com/mailq/pysenec
+Source: http://www.github.com/mailq/pysenechome
 """
 import asyncio
 import json
@@ -21,7 +21,7 @@ _LOGGER = logging.getLogger(__name__)
 
 @attr.s(slots=True)
 class Sensor(object):
-    """pysenec sensor definition."""
+    """pysenechome sensor definition."""
 
     key = attr.ib()
     name = attr.ib()
@@ -122,7 +122,7 @@ class SensorGroups(object):
     def add(self, key, sensors):
         """Add a sensor, warning if it exists."""
         if not isinstance(sensors, Sensors):
-            raise TypeError("pysenec.Sensors expected")
+            raise TypeError("pysenechome.Sensors expected")
 
         if key in self:
             old = self[key]
@@ -172,7 +172,7 @@ class Sensors(object):
             return
 
         if not isinstance(sensor, Sensor):
-            raise TypeError("pysenec.Sensor expected")
+            raise TypeError("pysenechome.Sensor expected")
 
         if sensor.name in self:
             old = self[sensor.name]

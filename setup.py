@@ -1,13 +1,13 @@
 #!/usr/bin/env python
-"""pysenec library setup."""
+"""pysenechome library setup."""
 from pathlib import Path
 from setuptools import setup
 
 VERSION = "0.0.1"
-URL = "https://github.com/mailq/pysenec"
+URL = "https://github.com/mailq/pysenechome"
 
 setup(
-    name="pysenec",
+    name="pysenechome",
     version=VERSION,
     description="Library to interface a SENEC.Home battery API",
     long_description=Path("README.md").read_text(),
@@ -17,7 +17,7 @@ setup(
     author="Marcel Lohmann",
     author_email="programming@malowa.de",
     license="MIT",
-    packages=["pysenec"],
+    packages=["pysenechome"],
     install_requires=["aiohttp>3,<4", "async_timeout>3,<4", "attrs>18"],
     zip_safe=True,
 )
