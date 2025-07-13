@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> The project is discontinued. It was a nice proof of concept, but you should consider [evcc](http://evcc.io) instead
+
 pysenechome library
 ===================
 
